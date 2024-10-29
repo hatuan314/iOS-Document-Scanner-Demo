@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IwE-Tj-cWZ">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Document_Scanner" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="GfK-UL-mgM">
+                                <rect key="frame" x="16" y="103.00000000000001" width="361" height="193.33333333333337"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Document Scanner" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6g7-jf-Ued">
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="28.666666666666668"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                        <color key="textColor" name="AccentColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Txz-wB-6HF">
+                                        <rect key="frame" x="0.0" y="64.666666666666671" width="361" height="128.66666666666663"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OZs-iQ-Bn7">
+                                                <rect key="frame" x="0.0" y="0.0" width="361" height="54.333333333333336"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Camera" buttonSize="large"/>
+                                                <connections>
+                                                    <action selector="onPressedCameraButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PI8-GW-Tfa"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pKz-od-KEn">
+                                                <rect key="frame" x="0.0" y="74.333333333333343" width="361" height="54.333333333333343"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Photos" buttonSize="large"/>
+                                                <connections>
+                                                    <action selector="onPressedPhotosButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wcg-eY-ore"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="6g7-jf-Ued" secondAttribute="trailing" id="1Qp-Vx-VwC"/>
+                                    <constraint firstItem="6g7-jf-Ued" firstAttribute="leading" secondItem="GfK-UL-mgM" secondAttribute="leading" id="PaF-gi-0IX"/>
+                                    <constraint firstAttribute="trailing" secondItem="Txz-wB-6HF" secondAttribute="trailing" id="Rxi-6f-Nsc"/>
+                                    <constraint firstItem="Txz-wB-6HF" firstAttribute="leading" secondItem="GfK-UL-mgM" secondAttribute="leading" id="YsG-mQ-XFz"/>
+                                    <constraint firstItem="6g7-jf-Ued" firstAttribute="top" secondItem="GfK-UL-mgM" secondAttribute="top" id="i8d-pm-adr"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GfK-UL-mgM" secondAttribute="trailing" constant="16" id="I9c-rf-zh6"/>
+                            <constraint firstItem="GfK-UL-mgM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="oXC-Oz-i2i"/>
+                            <constraint firstItem="GfK-UL-mgM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="xSY-qJ-54F"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="77b-IB-l6c"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1063.3587786259541" y="4.9295774647887329"/>
+        </scene>
+        <!--Photos View Controller-->
+        <scene sceneID="p54-3U-yF0">
+            <objects>
+                <viewController storyboardIdentifier="photos_view" id="uox-9C-LIh" customClass="PhotosViewController" customModule="Document_Scanner" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vPz-YQ-WI8">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Document Photos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4zv-yG-nqy">
+                                <rect key="frame" x="16" y="58.999999999999993" width="361" height="28.666666666666664"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" name="AccentColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0yB-mh-Z5Z"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="4zv-yG-nqy" firstAttribute="top" secondItem="0yB-mh-Z5Z" secondAttribute="top" id="0Y1-u3-l99"/>
+                            <constraint firstItem="4zv-yG-nqy" firstAttribute="leading" secondItem="0yB-mh-Z5Z" secondAttribute="leading" constant="16" id="1eJ-Wm-e8d"/>
+                            <constraint firstItem="0yB-mh-Z5Z" firstAttribute="trailing" secondItem="4zv-yG-nqy" secondAttribute="trailing" constant="16" id="k9S-j0-ofW"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="8c0-FT-wGG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bNY-5w-oSo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1843.5114503816794" y="4.9295774647887329"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="moD-fe-FEg">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="IwE-Tj-cWZ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="USQ-Lg-Cwo">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="wTs-2Y-FSB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cIj-pm-fce" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.64122137404578" y="4.9295774647887329"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
